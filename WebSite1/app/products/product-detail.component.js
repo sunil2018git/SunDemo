@@ -16,7 +16,11 @@ var ProductDetailComponent = /** @class */ (function () {
     }
     ProductDetailComponent.prototype.ngOnInit = function () { };
     ProductDetailComponent = __decorate([
-        core_1.Component({}),
+        core_1.Component({
+            //selector: 'pm-product-detail',
+            templateUrl: './product-detail.component.html',
+            styleUrls: ['./product-detail.component.css']
+        }),
         __metadata("design:paramtypes", [])
     ], ProductDetailComponent);
     return ProductDetailComponent;
