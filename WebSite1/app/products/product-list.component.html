@@ -24,8 +24,8 @@
                         <th width="10%">Code</th>
                         <th width="20%">Product</th>
                         <th width="25%">Product Description</th>
-                        <th width="10%">Available</th>
-                        <th width="10%">Price</th>
+                        <th width="20%">Available</th>
+                        <th width="5%">Price</th>
                         <th width="10%">5 Star Rating</th>
                     </tr>
                 </thead>
@@ -41,8 +41,8 @@
                         <td width="10%">{{product.productCode | lowercase}}</td>
                         <td width="20%">{{product.productName}}</td>
                         <td width="25%">{{product.description}}</td>
-                        <td width="10%">{{product.releaseDate}}</td>
-                        <td width="10%">{{product.price | currency: 'INR': true: '1.2-2'}}</td>
+                        <td width="20%">{{product.releaseDate}}</td>
+                        <td width="5%">{{product.price | currency: 'INR': true: '1.2-2'}}</td>
                         <td width="10%"><ai-star [rating]='product.starRating' (ratingClicked)= 'onRatingClicked($event)'>
                            </ai-star></td>
                     </tr>
